@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Detect language</title>
+		<script src="wasm_exec.js"></script>
+	</head>
+	<body>
+		<dl>
+			<dt>Text</dt>
+			<dd>
+				<textarea
+					id="input-text"
+					disabled="disabled"
+				>Initializing detector...</textarea>
+			</dd>
+
+			<dt>Language</dt>
+			<dd id="detected"></dd>
+		</dl>
+		<button
+			id="guess"
+			disabled="disabled"
+		>Detect Language</button>
+		<script type="module" src="index.mjs"></script>
+	</body>
+<html>
